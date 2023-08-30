@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 4300,
+      "quantity": "600",
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "Printer",
+      "price": "300",
+      "quantity": 100,
+      "selected": true,
+      "available": true,
+      "id": 2
+    },
+    {
+      "name": "hajder",
+      "price": "600",
+      "quantity": "200",
+      "selected": true,
+      "available": false,
+      "id": 3
+    },
+    {
+      "name": "lenovo",
+      "price": "1200",
+      "quantity": "123",
+      "selected": true,
+      "available": true,
+      "id": 4
+    },
+    {
+      "name": "hadjer",
+      "price": "1200",
+      "quantity": "10",
+      "selected": true,
+      "available": true,
+      "id": 5
+    }
+  ]
+}
