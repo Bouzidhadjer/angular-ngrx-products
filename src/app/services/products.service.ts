@@ -29,8 +29,7 @@ export class ProductsService {
     }
 
     selectProduct(product: Product): Observable<Product> {
-        product.selected = !product.selected;
-        return this.http.put<Product>(environment.backendHost+"/products/"+ product.id, product);
+        return this.http.put<Product>(environment.backendHost+"/products/"+ product.id, {...product,selected:!product.selected});
     }
     deleteProduct(product: Product): Observable<void> {
         return this.http.delete<void>(environment.backendHost+"/products/"+ product.id);
@@ -40,7 +39,7 @@ export class ProductsService {
     }
     
     getProduct(productId : number): Observable<Product> {
-        return this.http.get<Product>(environment.backendHost+"/products/"+productId);
+        return this.http.get<Product>(environment.backendHost+"/products/"+ productId);
    }
 
     updateProduct(product: Product):Observable<Product> {
